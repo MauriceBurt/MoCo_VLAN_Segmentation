@@ -75,3 +75,6 @@ These configurations demonstrate:
 - ACL enforcement to restrict guest access to internal resources
 
 You can use these configs to review or replicate the design in your own environment.
+
+---
+Part of the [Modular Networks Design Library](https://github.com/MauriceBurt/Modular-Networks).
