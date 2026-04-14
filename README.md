@@ -2,6 +2,12 @@
 
 This design demonstrates a segmented small business network that supports guest Wi-Fi access while protecting internal resources.
 
+## Repository Structure
+
+🔧 [Configs](./configs)  
+🗺️ [Topology](./topology)  
+📸 [Screenshots](./screenshots)
+
 ## Overview
 The network is segmented using VLANs to separate departments and services, including:
 - HR
@@ -38,9 +44,21 @@ This design enforces network isolation between guest and internal environments w
 - Cisco Packet Tracer
 - Cisco IOS CLI
 
+## Screenshots
+
+Key stages of the design and validation are included in the [Screenshots](./screenshots) directory, including:
+
+- Network topology layout
+- VLAN configuration
+- Inter-VLAN connectivity
+- Guest Wi-Fi connection
+- ACL enforcement (blocked vs allowed traffic)
+
+These provide a step-by-step visual breakdown of how the network operates.
+
 ## Configurations
 
-Router and switch configurations are included in the `/configs` directory.
+Router and switch configurations are included in the [Configs](./configs) directory.
 
 These configurations demonstrate:
 
