@@ -37,3 +37,16 @@ This design enforces network isolation between guest and internal environments w
 ## Tools Used
 - Cisco Packet Tracer
 - Cisco IOS CLI
+
+## Configurations
+
+Router and switch configurations are included in the `/configs` directory.
+
+These configurations demonstrate:
+
+- VLAN segmentation across departments (HR, Sales, Guest, Servers)
+- Trunking between switch and router (802.1Q)
+- Inter-VLAN routing using router-on-a-stick
+- ACL enforcement to restrict guest access to internal resources
+
+You can use these configs to review or replicate the design in your own environment.
