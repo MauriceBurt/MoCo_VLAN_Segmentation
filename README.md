@@ -1,6 +1,6 @@
-# Guest Wi-Fi Segmentation
+# MoCo VLAN Segmentation
 
-This design demonstrates a segmented small business network that supports guest Wi-Fi access while protecting internal resources.
+This design expands on the Guest Wi-Fi baseline by implementing a multi-department VLAN architecture, simulating a real-world business network with controlled access between internal segments.
 
 ## Repository Structure
 
@@ -20,25 +20,32 @@ Inter-VLAN routing is implemented using a router-on-a-stick configuration, allow
 
 ## Key Features
 - VLAN-based network segmentation
-- Router-on-a-stick inter-VLAN routing
-- Wireless guest network integration
-- ACL enforcement to restrict guest access to internal resources
+- Router-on-a-stick inter-VLAN routing (802.1Q)
+- Multi-department network design
+- ACL enforcement between VLANs
 - End-to-end connectivity validation using ICMP (ping)
 
 ## Network Behavior
-Guest users are able to:
-- Connect to the wireless network
+
+### Internal Users (HR / Sales):
+- Can communicate across permitted VLANs
+- Have access to internal server resources
+- Can reach external/public resources as needed
+
+### Guest Users:
+- Can connect to the wireless network
 - Receive IP addressing
 - Reach their default gateway
 - Access public-facing resources
 
-Guest users are not able to:
-- Access internal server resources
-
-Internal users retain full access to required services across VLANs.
+### Restrictions:
+- Guest users are **blocked from accessing internal VLANs and servers**
+- ACLs enforce segmentation boundaries between departments and guest traffic
 
 ## Outcome
-This design enforces network isolation between guest and internal environments while preserving necessary access for trusted users, reflecting a real-world approach to secure network segmentation.
+This design demonstrates how segmentation scales beyond a simple guest network into a structured internal architecture.
+
+It reflects a real-world approach to network design, where departments are isolated for security while still allowing controlled communication through routing and ACL policies.
 
 ## Tools Used
 - Cisco Packet Tracer
