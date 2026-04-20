@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MauriceBurt/Modular-Networks/main/Transparent_PNG.png" width="350"/>
+</p>
+
 # MoCo VLAN Segmentation
 
 This design expands on the Guest Wi-Fi baseline by implementing a multi-department VLAN architecture, simulating a real-world business network with controlled access between internal segments.
